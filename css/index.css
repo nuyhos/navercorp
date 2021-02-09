@@ -176,32 +176,42 @@
 }
 
 .content_news {
-   width:27%;
+   width:26.6%;
    height:177px;
    padding-right:20px;
    border-right:1px solid rgba(165, 165, 165, 0.2);
 }
 
 .content_career, .content_stock  {
-   width:27%;
+   width:26.6%;
    height:177px;
    padding:0 20px;
    border-right: 1px solid rgba(165, 165, 165, 0.2);
 }
 
 .content_finance {
-   width:19%;
+   width:20.2%;
    height:177px;
    padding-left:20px;
 }
 
 .summary_title {
-   font-weight:900;
    font-size:14px;
+   font-weight:900;
 }
 
 .news_box {
+   height:76px;
    margin:30px 0;
+}
+
+.news_title {
+   display: inline-block;
+   width:100%;
+   padding:0 5px;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   white-space:nowrap;
 }
 
 .news_title:hover {
@@ -209,14 +219,23 @@
 }
 
 .news_text {
+   display: inline-block;
    margin-top:10px;
    line-height:24px;
-   height:44px;
+   width: 100%;
+   height: 48px;
+
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* 라인수 */
+   -webkit-box-orient: vertical;
+   word-wrap:break-word; 
+
 }
 
-.icon_arrow svg {
-   vertical-align:middle;
-   margin-left:12px;
+.summary_link {
+   position: relative;
 }
 
 .summary_link a:hover {
@@ -227,6 +246,16 @@
    fill:rgb(255, 255, 255);
    border-radius:50%;
    background-color:rgb(0, 199, 60);
+}
+
+.icon_arrow {
+   position:absolute;
+   bottom:1px;
+}
+
+.icon_arrow svg {
+   vertical-align:middle;
+   margin-left:12px;
 }
 
 .career_text {
@@ -345,7 +374,8 @@
    transition:bottom .3s;
 }
 
-.content_service_box span { 
+.content_service_box dl::before { 
+   content:'';
    position:absolute;
    top:0;
    left:30px; 
