@@ -33,6 +33,7 @@
 
 .gnb_menu li a {
    padding:32px 0;
+   font-family:'NanumSquareEB';
    color:rgb(51,51,51);   
 }
 
@@ -387,8 +388,8 @@
 }
 
 .service_box_thumbnail dl dt {
+   font-family:'NanumSquareEB';
    font-size:22px;
-   font-weight:800;
    margin-bottom:2px; 
 }
 

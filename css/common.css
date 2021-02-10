@@ -1,12 +1,30 @@
 @charset "UTF-8";
 
+ @font-face {
+  font-family:'NanumSquareL';
+  src: url(../font/NanumSquareL.woff2) format('woff2');
+}
 @font-face {
-   font-family: "NanumSquare";
-   src: url("../font/NanumSquareR.woff2") format("woff2");
- }
+  font-family:'NanumSquareR';
+  src: url(../font/NanumSquareR.woff2) format('woff2');
+}
+@font-face {
+  font-family:'NanumSquareB';
+  src: url(../font/NanumSquareB.woff2) format('woff2');
+}
+@font-face {
+  font-family:'NanumSquareEB';
+  src: url(../font/NanumSquareEB.woff2) format('woff2');
+}
+
 
  /* font style */
-body, input, textarea, select, button, table, h1, p{font-family: 'NanumSquare'; font-size:15px; font-weight:400; line-height:1.5; letter-spacing:normal; color:rgb(51,51,51); }
+body, input, textarea, select, button, table, h1, p {
+  font-family: 'NanumSquareR'; 
+  font-size:15px; 
+  line-height:1.5;
+  letter-spacing:normal; 
+  color:rgb(51,51,51); }
 
 button {cursor:pointer;}
 
@@ -21,11 +39,9 @@ button {cursor:pointer;}
 .p_10 {font-size:10px; line-height:15px;}
 
 /* font weight */
-.fw_300 {font-weight: 300;}
-.fw_400 {font-weight: 400;}
-.fw_700 {font-weight: 700;}
-.fw_800 {font-weight: 800;}
-.ff_eb {font-family:'NanumSquare-EB';}
+.fW_3L {font-family:'NanumSquareL';}
+.fW_7B {font-family:'NanumSquareB';}
+.fW_8EB {font-family:'NanumSquareEB';}
 
 /* font color */
 .c_point {color:rgb(0, 184, 67);}
@@ -35,7 +51,7 @@ button {cursor:pointer;}
 .c_lgray {color:rgb(135, 136, 144)}
 .c_white {color:rgb(255,255,255);}
 
-
+/* margin & padding */
 .mb_32 {margin-bottom:32px;}
 .pr_20 {padding-right:20px;}
 .pl_20 {padding-left:20px;}
