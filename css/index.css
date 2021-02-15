@@ -398,3 +398,188 @@ header {
    bottom:10%;
  }
  /* //content service */
+
+ 
+ /* content support */
+.content_support {
+   width: 100%;
+   margin-top: 112px;
+   text-align: center;
+}
+
+.support_title {
+   font-family: 'NanumSquareB';
+   font-size: 32px;
+   margin-bottom: 17px;
+}
+
+.support_text {
+   font-size: 18px;
+   margin-bottom: 134px;
+}
+
+.support_list_container {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.support_list_container:after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+.support_list_box {
+   position:relative;
+}
+
+.support_list_box:first-child:before {
+   display:none;
+}
+
+.support_list_box:before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 1px;
+   height: 215px;
+   background-color: #efefef;
+}
+
+.support_list_box a {
+   display: block;
+   position: relative;
+   width: 100%;
+   padding: 135px 17px 0 ;
+}
+
+.support_list_box a.creators:before {
+   width: 87px;
+   background-position: 0 -957px;
+}
+
+.support_list_box a.business:before {
+   width: 101px;
+   background-position: -92px -957px;
+}
+
+.support_list_box a.developers:before {
+   width: 110px;
+   height: 95px;
+   background-position: -199px -957px;
+}
+
+.support_list_box a.flower:before {
+   width: 93px;
+   background-position: -316px -957px;
+}
+
+.support_list_box a:before {
+   content:'';
+   background-image: url(../img/all_icon.png);
+   background-size: 474px 1400px;
+   position:absolute;
+   top:0;
+   left:50%;
+   height:100px;
+   transform: translateX(-50%);
+}
+
+.support_list_box dt {
+   margin-bottom: 10px;
+   color:rgb(0, 184, 67);
+   font-family: 'NanumSquareB';
+   font-size:16px;
+   line-height: 22.4px;
+}
+
+/* .support_list_box dt:hover {
+   text-decoration: underline;
+} */
+
+.support_list_box:hover .underline {
+   text-decoration: underline;
+}
+
+.support_list_box dd {
+   color: rgb(135, 136, 144);
+   font-size:15px;
+   line-height: 24px;
+}
+
+
+
+footer {
+   width:100%;
+   height:160px;
+   background-color:rgb(248, 249, 250);
+   
+}
+
+.footer {
+   display:flex;
+   justify-content: space-between;
+   padding:70px 30px;
+}
+
+.footer_left {
+   display:flex;
+}
+
+.footer_logo {
+   background: url(../img/naver_corp_logo2.png) no-repeat;
+   width: 63px;
+   padding-right:20px;
+   margin-top:3px;
+}
+
+.footer_menu li {
+   display:inline-block;
+   padding:0 5px;
+   
+}
+
+.footer_menu a {
+   font-size:14px;
+   color:rgb(135, 136, 144);
+   
+}
+
+.footer_menu span {
+   font-size:14px;
+   color:rgba(135, 136, 144, 0.2);
+}
+
+.footer_left img {
+   width:63px;
+}
+
+.footer_center {
+   width:337px;
+   background: url(../img/naver_corp_copy.png) no-repeat;
+}
+
+.footer_right button {
+   font-family: 'NanumSquareB';
+   background-color:rgba(255, 255, 255, 0);
+   font-size:14px;
+   margin-left:290px;
+   padding-right:25px;
+   position: relative;
+}
+
+.footer_right button::after {
+   content: '';
+   position: absolute;
+   right: 0;
+   top: 2px;
+   width: 16px;
+   height: 16px;
+   background: url(../img/all_icon.png) no-repeat;
+   background-size: 474px 1400px;
+   background-position: -222px -26px;
+}
