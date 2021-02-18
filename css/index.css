@@ -420,19 +420,18 @@ header {
 
 .support_list_container {
    width: 100%;
+   margin: 0 auto;
    display: flex;
    justify-content: space-between;
-   text-align: center;
-   margin: 0 auto;
 }
 
 .support_list_container:after {
    content: '';
    display: block;
-   clear: both;
 }
 
 .support_list_box {
+   width: 100%;
    position:relative;
 }
 
@@ -447,7 +446,7 @@ header {
    top: 0;
    width: 1px;
    height: 215px;
-   background-color: #efefef;
+   background: rgb(239, 239, 239);
 }
 
 .support_list_box a {
@@ -497,10 +496,6 @@ header {
    line-height: 22.4px;
 }
 
-/* .support_list_box dt:hover {
-   text-decoration: underline;
-} */
-
 .support_list_box:hover .underline {
    text-decoration: underline;
 }
@@ -510,8 +505,6 @@ header {
    font-size:15px;
    line-height: 24px;
 }
-
-
 
 footer {
    width:100%;
