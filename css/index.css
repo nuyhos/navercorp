@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 /* header */
 header {
    width:100%;
@@ -162,6 +160,7 @@ header {
    opacity: 1;
 }
 /* //hero */
+
 
 /* main content */
 .main_content {
@@ -397,10 +396,10 @@ header {
 .content_service_box:hover .service_box_thumbnail dl {
    bottom:10%;
  }
- /* //content service */
+/* //content service */
 
  
- /* content support */
+/* content support */
 .content_support {
    width: 100%;
    margin-top: 112px;
@@ -419,7 +418,7 @@ header {
 }
 
 .support_list_container {
-   width: 100%;
+   max-width: 1360px;
    margin: 0 auto;
    display: flex;
    justify-content: space-between;
@@ -433,6 +432,7 @@ header {
 .support_list_box {
    width: 100%;
    position:relative;
+   width: 25%;
 }
 
 .support_list_box:first-child:before {
@@ -453,6 +453,7 @@ header {
    display: block;
    position: relative;
    width: 100%;
+   left: -18px;
    padding: 135px 17px 0 ;
 }
 
@@ -507,72 +508,97 @@ header {
 }
 
 footer {
-   width:100%;
-   height:160px;
-   background-color:rgb(248, 249, 250);
-   
+   width: 100%;
+   background-color: rgb(248, 249, 250);
 }
 
-.footer {
-   display:flex;
-   justify-content: space-between;
-   padding:70px 30px;
-}
-
-.footer_left {
-   display:flex;
+.footer_wrap {
+   position: relative;
+   max-width: 1600px;
+   margin: 0 auto;
+   padding: 74px 0 70px;
 }
 
 .footer_logo {
-   background: url(../img/naver_corp_logo2.png) no-repeat;
+   position: absolute;
+   left: 30px;
+   top: 76px;
    width: 63px;
-   padding-right:20px;
-   margin-top:3px;
+   height: 13px;
+   margin: 0 auto;
+   background-image: url(../img/naver_corp_logo2.png);
+   background-repeat: no-repeat;
+}
+
+.footer_menu {
+   position: absolute;
+   left: 105px;
+   top: 74px;
+   display: flex;
 }
 
 .footer_menu li {
-   display:inline-block;
-   padding:0 5px;
-   
+   position: relative;
+   margin: 0 10px;
+   font-size: 14px;
 }
 
-.footer_menu a {
-   font-size:14px;
-   color:rgb(135, 136, 144);
-   
+.footer_menu li:before {
+   content: '';
+   position: absolute;
+   display: block;
+   top: 5px;
+   left: -10px;
+   width: 1px;
+   height: 12px;
+   background-color: rgb(223,224,225);
 }
 
-.footer_menu span {
-   font-size:14px;
-   color:rgba(135, 136, 144, 0.2);
+.footer_menu li:first-child:before {
+   display: none;
 }
 
-.footer_left img {
-   width:63px;
+.footer_menu li a {
+   color: rgb(135,136,144);
 }
 
-.footer_center {
-   width:337px;
-   background: url(../img/naver_corp_copy.png) no-repeat;
+.footer_menu li:nth-child(3) {
+   font-family: 'NanumSquareEB';
 }
 
-.footer_right button {
+
+.footer_wrap .footer_copy {
+   margin: 0 auto;
+   width: 337px;
+   height: 16px;
+   background-image: url(../img/naver_corp_copy.png);
+
+   background-size: 337px 16px;
+}
+
+.footer_wrap .footer_affiliate {
+   position: absolute;
+   top: 74px;
+   right: 30px;
+}
+
+.footer_affiliate .btn_affiliate {
+   position: relative;
+   padding-right: 26px;
+   font-weight: 400;
    font-family: 'NanumSquareB';
    background-color:rgba(255, 255, 255, 0);
    font-size:14px;
-   margin-left:290px;
-   padding-right:25px;
-   position: relative;
 }
 
-.footer_right button::after {
+.footer_affiliate .btn_affiliate:before {
    content: '';
    position: absolute;
    right: 0;
-   top: 2px;
+   top: 0;
    width: 16px;
    height: 16px;
-   background: url(../img/all_icon.png) no-repeat;
+   background-image: url(../img/all_icon.png);
    background-size: 474px 1400px;
    background-position: -222px -26px;
 }
