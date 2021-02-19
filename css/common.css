@@ -27,8 +27,6 @@
    letter-spacing:normal; 
    color:rgb(51,51,51); }
  
- button {cursor:pointer;}
- 
  /* font size */
  .p_36 {font-size:36px; line-height:46px; letter-spacing:-1px;}
  .p_32 {font-size:32px; line-height:45px;}
